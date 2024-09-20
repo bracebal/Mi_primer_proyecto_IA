@@ -1,3 +1,27 @@
+:root{
+    --margin-page:60px;
+    --color-primary: #022140;
+    --color-action: #04BBBF ;
+    --color-secundary: #03558A;
+    --color-tertiary: #007D8C;
+    --color-black: #2E2E2E;
+    --color-white: #F2F2F5;
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url(/Fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(/Fonts/Roboto-Light.ttf);
+}
+
 *{
     padding: unset;
     margin: unset;
@@ -5,17 +29,54 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'RobotoRegular', 'RobotoBold', 'RobotoLight','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
     box-sizing: border-box;
+    line-height: none;
+    outline: unset;
 }
 
 body{
     color: #1e1e1e
 }
 
-header nav{
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 16px var(--margin-page);
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.navbar a, .navbar button {
+    font-family: 'RobotoRegular';
+}
+.jumbotron {
+    background-image: url('/Assets/jumbotron1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    padding: calc(var(--margin-page) * 2);
+}
+
+.jumbotron > div{
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 24px;
+}
+
+.jumbotron h1{
+    color: var(--color-primary);
+    font-family: 'RobotoBold';
+    font-size: 3rem;
+    display: flex;
     align-items: center;
 }
