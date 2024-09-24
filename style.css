@@ -7,7 +7,7 @@
     --color-black: #2E2E2E;
     --color-white: #F2F2F5;
 }
-
+/*Fuente de texto*/
 @font-face {
     font-family: RobotoRegular;
     src: url(/Fonts/Roboto-Regular.ttf);
@@ -39,7 +39,7 @@
 body{
     color: #1e1e1e
 }
-
+/*Barra de navegación*/
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,8 @@ body{
 .navbar a, .navbar button {
     font-family: 'RobotoRegular';
 }
+
+/*Jumbotron 1*/
 .jumbotron {
     background-image: url('/Assets/jumbotron1.jpg');
     background-size: cover;
@@ -79,4 +81,122 @@ body{
     font-size: 3rem;
     display: flex;
     align-items: center;
+}
+
+/*Tarjetas*/
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card > div {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.card .rating img {
+    width: 20px;
+    height: 20px;
+}
+
+.card button {
+    background-color: #03558A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.card button:hover {
+    background-color: #022140; 
+}
+
+/* Segundo Jumbotron */
+.jumbotron_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--margin-page);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+  
+  .jumbotron_2 img {
+    max-width: 50%; 
+  }
+  
+  .jumbotron_2 h1 {
+    background-color: white;
+    padding: var(--margin-page);
+    font-size: 3rem;
+    font-family: 'RobotoBold';
+    color: var(--color-primary);
+    text-align: center;
+  }
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: var(--margin-page);
+}
+
+.footer p {
+    flex-basis: 100%;
+    text-align:left;
+    margin-bottom: 20px;
+    font-family: 'RobotoBold';
+}
+
+.footer nav {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer nav h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'RobotoBold';
+}
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'RobotoRegular';
+}
+
+/*.footer nav ul li {
+    margin-bottom: 8px;
+}*/
+
+.footer-bottom {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #f2f2d2;
 }
