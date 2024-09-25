@@ -36,6 +36,13 @@
     outline: unset;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+}
+
 body{
     color: #1e1e1e
 }
@@ -45,7 +52,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 16px var(--margin-page);
-    /*transition: background .3s ease-in-out;*/
 }
 
 
@@ -126,6 +132,7 @@ body{
 
 .card h2 {
     font-size: 1.5rem;
+    font-family: 'RobotoBold';
 }
 
 .card p {
@@ -162,14 +169,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--margin-page);
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 400px;
   }
   
   .jumbotron_2 img {
-    max-width: 50%; 
+    max-width: 50%;
+    left: 0;
   }
   
   .jumbotron_2 h1 {
